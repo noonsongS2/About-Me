@@ -1,0 +1,196 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #d9d9d9;
+  padding: 60px 44px;
+  text-align: center;
+  z-index: 1;
+}
+
+header h1 {
+  color: black;
+  font-size: 40px;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+
+header a {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+main {
+  margin-left: 400px;
+}
+
+#main-title {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+#main-title h2 {
+  margin-left: 20px;
+  margin-bottom: 0;
+  line-height: 32px;
+}
+
+article {
+  margin-top: 180px;
+}
+
+section {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 10px;
+}
+
+#skillset {
+  font-size: 18px;
+}
+
+main img {
+  margin-right: 12px;
+}
+
+.container-name {
+  font-size: 20px;
+  color: #545454;
+}
+
+
+.heading {
+  display: flex;
+  align-items: center;
+  line-height: 32px;
+}
+
+.list {
+  margin: 10px;
+  font-size: 16px;
+  line-height: 12px;
+}
+
+#info {
+  font-size: 16px;
+}
+
+.sub-info {
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  header {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    padding: 20px;
+    height: 100px;
+  }
+
+  header a {
+    display: inline;
+  }
+
+  main {
+    margin:300px 70px;
+  }
+
+  #main-title {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    right:0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  header a {
+    font-size: 18px;
+  }
+
+  #main-title img {
+    width: 90px;
+    height: 90px;
+  }
+
+  #main-title h2 {
+    font-size: 18px;
+  }
+
+  article {
+    margin-top: -70px;
+  }
+
+  .heading {
+    line-height: 24px;
+    font-size: 18px;
+  }
+
+  section img {
+    width: 24px;
+    height: 24px;
+  }
+
+  #info, #skillset, .list {
+    font-size: 12px;
+  }
+
+  .sub-info {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  header a {
+    font-size: 15px;
+  }
+
+  #main-title {
+    margin-top: 10px;
+  }
+
+  #main-title img {
+    width: 70px;
+    height: 70px;
+  }
+
+  #main-title h2 {
+    font-size: 15px;
+  }
+
+  article {
+    margin: -30px
+  }
+
+  .grid, .list {
+    display: block;
+  }
+}
